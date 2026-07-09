@@ -16,7 +16,7 @@ export async function writeToJson(name, data) {
   }
 }
 
-export async function readFrmJson(name) {
+export async function readFromJson(name) {
   try {
     const text = await fs.readFile(filepath(name), "utf-8");
     return JSON.parse(text || []);
