@@ -10,7 +10,7 @@ function filepath(name) {
 export async function writeToJson(name, data) {
   try {
     const text = JSON.stringify(data, null, 2);
-    fs.writeFile(filepath(name), text, "utf-8");
+    await fs.writeFile(filepath(name), text, "utf-8");
   } catch (e) {
     console.log(e);
   }

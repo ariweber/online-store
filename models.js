@@ -6,3 +6,11 @@ export function productModel(id ,name, price, stock){
         stock
     }
 }
+
+export async function  order(id, customerId){
+
+}
+
+
+
+
